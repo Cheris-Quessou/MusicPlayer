@@ -21,10 +21,16 @@
                 <h1>Color Your Night</h1>
                 <p>Persona 3 Reload</p>
 
-                <audio controls>
+                <audio id="song">
                     <source src="media/Color Your Night.mp4" type="audio/mp4">
                 </audio>
                 <input type="range" value="0" id="progress">
+
+                <div class="controls">
+                    <div><i class="fa-solid fa-backward"></i></div>
+                    <div onclick="playPause()"><i class="fa-solid fa-play" id="ctrlIcon"></i></i></div>
+                    <div><i class="fa-solid fa-forward"></i></div>
+                </div>
             </div>
         </div>
         <script src="script.js"></script>
